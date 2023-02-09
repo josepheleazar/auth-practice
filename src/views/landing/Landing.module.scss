@@ -1,0 +1,19 @@
+@import '../../main.scss';
+
+// General Style and Phone Size
+.landing__container {
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+// Tablet Size
+@media (min-width: 768px) {
+  
+}
+
+// Desktop Size
+@media (min-width: 992px) {
+  
+}

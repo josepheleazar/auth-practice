@@ -1,0 +1,72 @@
+@import '../../main.scss';
+
+// General Style and Phone Size
+.dashboard__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.dashboard__loading__container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+}
+
+.dashboard__button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.dashboard__actions-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+.dashboard__actions-footer-container {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.dashboard__actions-container > .warning {
+  background-color: $warning-color;
+}
+
+.dashboard__forms__label-input-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.dashboard__forms__label-input-container > .textfield {
+  width: 75%;
+}
+
+// Tablet Size
+@media (min-width: 768px) {
+  .dashboard__loading__container {
+    height: 87.5vh;
+  }
+}
+
+// Desktop Size
+@media (min-width: 992px) {
+  .dashboard__container {
+    padding: 1rem 15rem;
+  }
+
+  .dashboard__loading__container {
+    height: 83.5vh;
+  }
+}

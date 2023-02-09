@@ -1,0 +1,23 @@
+@import '../../main.scss';
+
+// General Style and Phone Size
+.login__container {
+  align-items: center;
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+}
+
+// Tablet Size
+@media (min-width: 768px) {
+  .login__container {
+    height: 90vh;
+  } 
+}
+
+// Desktop Size
+@media (min-width: 992px) {
+  .login__container {
+    height: 100vh;
+  } 
+}

@@ -1,0 +1,54 @@
+@import '../../main.scss';
+
+// General Style and Phone Size
+.header__tabs__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.header__tabs__container > * {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.header__login__container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header__login__container > * {
+  color: $primary-main-color;
+  text-decoration: none;
+}
+
+.footer__container {
+  align-items: center;
+  color: $primary-background-color;
+  display: flex;
+  justify-content: center;
+}
+
+// Tablet Size
+@media (min-width: 900px) {
+  .header__tabs__container {
+    flex-direction: row;
+  }
+  
+  .header__tabs__container > * {
+    color: $primary-main-color;
+    text-decoration: none;
+  }
+}
+
+// Desktop Size
+@media (min-width: 1200px) {
+  .header__tabs__container {
+    flex-direction: row;
+  }
+
+  .header__tabs__container > * {
+    color: $primary-main-color;
+    text-decoration: none;
+  }
+}

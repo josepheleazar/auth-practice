@@ -1,0 +1,70 @@
+@import '../../main.scss';
+
+// General Style and Phone Size
+.settings__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.settings__container-with-divider--medium {
+  border-bottom: 4px solid #000;
+  padding: 1rem 1rem 1rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.settings__container-with-divider--thin {
+  border-bottom: 2px solid #000;
+  padding: 0rem 1rem 1rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.settings__title-container-with-button {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.settings__item-container-with-input--flex-start {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.settings__item-container-with-input--space-between {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.settings__item-container-with-input--space-between > .textfield {
+  width: 75%;
+}
+
+.settings__button-container--flex-end {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+// Tablet Size
+@media (min-width: 768px) {
+  .settings__container {
+    padding: 2rem;
+  }
+}
+
+// Desktop Size
+@media (min-width: 992px) {
+  .settings__container {
+    padding: 1rem 25rem;
+  }
+}
